@@ -1,3 +1,5 @@
+package br.edu.principal;
+
 import java.util.Scanner;
 
 public class Principal {
@@ -7,12 +9,12 @@ public class Principal {
         String celular = "";
         String email = "";
         boolean continuar = true;
-
+        
         System.out.println("==========================");
         System.out.println(" AGENDA DE CONTATOS ");
         System.out.println(" V.0.0.0 ");
         System.out.println("==========================");
-
+        
         while (continuar) {
             System.out.println();
             System.out.println("1 - Adicionar contato");
@@ -22,10 +24,10 @@ public class Principal {
             System.out.println("5 - Sair");
             System.out.println();
             System.out.print("Escolha uma opção: ");
-
+            
             int opcao = scanner.nextInt();
             scanner.nextLine();
-
+            
             switch (opcao) {
                 case 1:
                     System.out.println("\n--- ADICIONAR CONTATO ---");
@@ -85,4 +87,4 @@ public class Principal {
         }
         scanner.close();
     }
-} 
+}
